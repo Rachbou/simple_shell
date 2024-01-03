@@ -2,7 +2,8 @@
 
 /**
  * main - runs the Simple Shell
- * a simple UNIX command interpreter.
+ * @argv: a NULL terminated array of strings
+ * @argc: the number of items in av
  * Return: 0 on success
  */
 
