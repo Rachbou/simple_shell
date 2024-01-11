@@ -111,7 +111,7 @@ int checkbuiltins(char **av, char *Command, int status)
 
 	if (_strcmp(av[0], "env") == 0)
 	{
-		env();
+		_env();
 		for (i = 0; av[i]; i++)
 			free(av[i]);
 		free(av);

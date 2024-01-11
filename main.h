@@ -39,4 +39,12 @@ int _splitPATH(char *str);
 int _PATHstrcmp(const char *s1, const char *s2);
 char *_concat(char *tmp, char **av, char *token);
 
+/*Other Functions*/
+
+char *_getenv(const char *name);
+int _env(void);
+void _puts(char *str);
+int _putchar(char c);
+char *_memset(char *s, char b, unsigned int n);
+
 #endif /* MAIN_H */

@@ -5,15 +5,14 @@
  * @argc: the number of items in av
  * Return: 0 on success
  */
-int main(int argc, char ** argv)
+int main(void)
 {
 	char *fpcommand = NULL, *tmpcommand = NULL, *command = NULL;
 	char *PATH = NULL;
 	char **av = NULL;
-	int status = argc;
-	char *err = strcat(argv[0],": No such file or directory\n");
+	int status = 0;
 
-	PATH = getenv("PATH");
+	PATH = _getenv("PATH");
 	if (PATH == NULL)
 		return (-1);
 	while (1)
